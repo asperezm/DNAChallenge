@@ -18,9 +18,11 @@ La aplicación está desplegada y disponible para pruebas en Postman utilizando 
 ```bash
 https://dnachallenge-production.up.railway.app/api/dna/stats
 ```
+![status](util/status.png)
 ```bash
 https://dnachallenge-production.up.railway.app/api/dna/mutant
 ```
+![mutant](util/mutant.png)
 
 ## Pruebas de cobertura 📋
 
