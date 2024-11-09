@@ -32,7 +32,24 @@ A continuación se muestran las pruebas de cobertura utilizando **Jacoco** para 
 
 ## Instrucciones de uso local
 
+Para ejecutar la aplicación localmente, sigue estos pasos:
+
+1. **Clona el repositorio:**
+
+   Si aún no tienes el repositorio, clónalo en tu máquina local y usa los siguientes comandos:
+
+   ```bash
+   git clone https://github.com/asperezm/DNAChallenge.git
+   ```
+   ```bash
+   cd DNAChallenge
+   ```
+   ```bash
+   ./gradlew bootRun
+    ```
+
 ### Requisitos 🖇️
 
 - JDK 17
 - Gradle
+
