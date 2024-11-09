@@ -38,4 +38,19 @@ public class DNAServiceTest {
         boolean result = dnaService.isMutant(nonMutantDna);
         assertFalse(result, "DNA no es mutante");
     }
+
+    @Test
+    void multipleDiagonalSequencesTest() {
+        String[] mutantDnaMultipleDiagonal = {
+            "AAAAAT",
+            "CAGTGC",
+            "TTATGT",
+            "AGAAGG",
+            "CCCCTA",
+            "TCACTG"
+        };
+
+        boolean result = dnaService.isMutant(mutantDnaMultipleDiagonal);
+        assertTrue(result, "DNA es mutante (múltiples secuencias diagonales)");
+    }
 }
