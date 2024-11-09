@@ -1,14 +1,11 @@
-# Usa una imagen oficial de OpenJDK 21
-FROM openjdk:21-jdk-slim
+# Usa una imagen oficial de OpenJDK 21 con Gradle
+FROM gradle:7.5-jdk21 AS build
 
 # Establece el directorio de trabajo en la imagen
 WORKDIR /app
 
 # Copia los archivos de tu proyecto al contenedor
 COPY . .
-
-# Instala Gradle (si no está instalado)
-RUN apt-get update && apt-get install -y gradle
 
 # Ejecuta la compilación de tu proyecto
 RUN gradle build
