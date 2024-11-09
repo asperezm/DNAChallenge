@@ -29,6 +29,11 @@ dependencies {
 	testImplementation 'org.mockito:mockito-core:4.6.1'
 }
 
+bootJar {
+    archivesBaseName = 'DNAChallenge'
+    version = '0.1.0'
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
