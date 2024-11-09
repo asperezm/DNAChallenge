@@ -7,12 +7,12 @@ WORKDIR /app
 # Copia los archivos de tu proyecto al contenedor
 COPY . .
 
-# Instalar Gradle 8.0 (o superior)
+# Instalar Gradle 8.5 (o superior)
 RUN apt-get update && apt-get install -y wget unzip && \
-    wget https://services.gradle.org/distributions/gradle-8.0-bin.zip -P /tmp && \
-    unzip -d /opt/gradle /tmp/gradle-8.0-bin.zip && \
-    rm /tmp/gradle-8.0-bin.zip && \
-    ln -s /opt/gradle/gradle-8.0/bin/gradle /usr/bin/gradle
+    wget https://services.gradle.org/distributions/gradle-8.5-bin.zip -P /tmp && \
+    unzip -d /opt/gradle /tmp/gradle-8.5-bin.zip && \
+    rm /tmp/gradle-8.5-bin.zip && \
+    ln -s /opt/gradle/gradle-8.5/bin/gradle /usr/bin/gradle
 
 # Ejecuta la compilación de tu proyecto
 RUN gradle build
