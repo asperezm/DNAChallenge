@@ -7,6 +7,9 @@ WORKDIR /app
 # Copia los archivos de tu proyecto al contenedor
 COPY . .
 
+# Da permisos de ejecución al archivo gradlew
+RUN chmod +x gradlew
+
 # Establece JAVA_HOME
 ENV JAVA_HOME=/usr/local/openjdk-21
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
